@@ -141,7 +141,7 @@ Join on our channel to get movies ✅
 
         chat_id=update.chat.id,
 
-        photo=random.choice (PHOTO),
+        photo= random.choice (PHOTO),
 
         caption=Translation.START_TEXT.format(
 
