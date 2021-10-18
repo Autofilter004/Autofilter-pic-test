@@ -10,6 +10,22 @@ from pyrogram.errors import UserNotParticipant
 from bot import FORCESUB_CHANNEL
 db = Database()
 
+PHOTO=[
+
+"https://telegra.ph/file/762179258fda5e6ac4336.jpg",
+
+"https://telegra.ph/file/172c0a985660ca6bd62c3.jpg",
+
+"https://telegra.ph/file/0d1a6188baefe7211e951.jpg",
+
+"https://telegra.ph/file/9544966e3bc99b8e92fe2.jpg",
+
+"https://telegra.ph/file/2d3d4039d2082cf8b6116.jpg",
+
+"https://telegra.ph/file/46cfe78b9784dfa617670.jpg",
+
+]
+
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
     update_channel = FORCESUB_CHANNEL
@@ -125,7 +141,7 @@ Join on our channel to get movies ✅
 
         chat_id=update.chat.id,
 
-        photo="https://telegra.ph/file/e42a430dbac1765e85e36.jpg",
+        photo=random.choice (PHOTO),
 
         caption=Translation.START_TEXT.format(
 
