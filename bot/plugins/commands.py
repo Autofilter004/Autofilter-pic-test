@@ -7,7 +7,8 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 from bot import Translation # pylint: disable=import-error
 from bot.database import Database # pylint: disable=import-error
 from pyrogram.errors import UserNotParticipant
-import FORCESUB_CHANNEL import random
+from bot import FORCESUB_CHANNEL
+import random
 db = Database()
 
 PHOTO=[
